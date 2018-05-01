@@ -9,10 +9,10 @@ import math
 import sqlite3
 
 def get_twitter_handle():
-    APP_KEY=           "Diqbspq2ZyxNGycMbNxP9SRKB"
-    APP_SECRET=        "dktbuX5ZptKYKWxiPZaWAsJ3XiYcabQ7LmjdKL6EgKf1REka0k"
-    OAUTH_TOKEN=       "143556525-HJeIoLx9FNzkGosqez5dNog6bQQqaaJyW38l1sKh"
-    OAUTH_TOKEN_SECRET="cJta5A4tv4umr6frZkbY4lyCvGy1PQxU47WE03cx4oS2w"
+    APP_KEY=           "myAppKey"
+    APP_SECRET=        "myAppSecret"
+    OAUTH_TOKEN=       "myOauthToken"
+    OAUTH_TOKEN_SECRET="myOauthSecret"
     return Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 def get_followers(twitter_handle,username,next_cursor):
     g_followers=twitter_handle.get_followers_ids(screen_name=username,
@@ -50,8 +50,8 @@ def wait_random_time():
     print rand
     time.sleep(rand)
 def get_client_target_names():
-    client_name='steveharville'
-    target_name='oracledatabase'
+    client_name='myTwitterName'
+    target_name='TwitterAccountWithLotsOfFollowersAndContentLikeMine'
     return client_name,target_name
 def setup_database(client_name,target_name):
     db_name=client_name + "_" + target_name + ".sqlite"
