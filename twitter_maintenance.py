@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
-
+# copyright 2017 Steve Harville
 import twitter_util2
 client_name,target_name=twitter_util2.get_client_target_names()
 db_connection,db_cursor=twitter_util2.setup_database(client_name, target_name)
