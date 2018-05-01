@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
-
+# copyright 2017 Steve Harville
 from twython import Twython,TwythonError
 import datetime
 import time 
